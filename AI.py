@@ -35,6 +35,11 @@ for i in range(0, len(data.columns)):
     
 data_target = data['class']
 data_feature = data.drop('class', 1)
+data_feature = data_feature.drop('bruises',1)
+data_feature = data_feature.drop('spore-print-color',1)
+data_feature = data_feature.drop('odor',1)
+data_feature = data_feature.drop('stalk-root',1)
+
 
 
 # In[34]:
