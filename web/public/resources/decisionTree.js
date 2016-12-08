@@ -4,143 +4,78 @@ var simple_chart_config = {
 	},
 	
 	nodeStructure: {
-		text: { name: "odor == n" },
-		pivot: {name: "n"},
-		// odor child======================================
+		text: { name: "odor == none" },
 		children: [
 			{
-				text: { name: "spore-print-color == r"},
-				pivot: {name: "r"},
-				// ========================================
-				// spore-print-color=======================
+				text: { name: "spore-print-color == green"},
 				children:[
 					{
 						text: {name: "poisonous"}
 					},
 					{
-						text: {name: "stalk-surface-below-ring == y"},
-						pivot: {name: "y"},
-						// ================================
-						// ================================
-						// stalk-surface-below-ring========
+						text: {name: "stalk-surface-below-ring == scaly"},
 						children:[
 							{
-								text: {name: "gill-size == n"},
-								pivot: {name: "n"},
-								// ========================
-								// ========================
-								// ========================
-								// gill-size child=========
+								text: {name: "gill-size == narrow"},
 								children:[
 									{
 										text: {name: "poisonous"},
 									},
 									{
-										text: {name: "e"},
+										text: {name: "eatable"},
 									}
 								]
-								// gill-size child==========
-								// =========================
-								// =========================
-								// =========================
 							},
 							{
-								text: {name: "cap-surface == g"},
-								pivot: {name: "g"},
-								// =========================
-								// =========================
-								// =========================
-								// cap-surface==============
+								text: {name: "cap-surface == grooves"},
 								children:[
 									{
 										text: {name: "poisonous"},
 									},
 									{
-										text: {name: "e"},
+										text: {name: "eatable"},
 									}
 								]
-								// cap-surface===============
-								// ==========================
-								// ==========================
-								// ==========================
 							}
 						]
-						// stalk-surface-below-ring==========
-						// ==================================
-						// ==================================
 					}
 				]
-				// spore-print-color=========================
-				// ==========================================
 			},
 			{
-				text: { name: "bruises == t"},
-				pivot: {name: "t"},
-				// ================================================
-				// bruises child===================================
+				text: { name: "bruises == bruises"},
 				children:[
 					{
-						text: {name: "stalk-root == c"},
-						pivot: {name: "c"},
-						// ========================================
-						// ========================================
-						// stalk-root child========================
+						text: {name: "stalk-root == club"},
 						children:[
 							{
-								text: {name: "e"}
+								text: {name: "eatable"}
 							},
 							{
-								text: {name: "stalk-root == r"},
-								pivot: {name: "r"},
-								// =================================
-								// =================================
-								// =================================
-								// stalk-root child=================
+								text: {name: "stalk-root == rooted"},
 								children:[
 									{
-										text: {name: "e"}
+										text: {name: "eatable"}
 									},
 									{
-										text: {name: "gill-spacing == c"},
-										pivot: {name: "c"},
-										// =========================
-										// =========================
-										// =========================
-										// =========================
-										// gill-spacing child=======
+										text: {name: "gill-spacing == close"},
 										children:[
 											{
 												text: {name: "poisonous"}
 											},
 											{
-												text: {name: "e"}
+												text: {name: "eatable"}
 											}
 										]
-										// gill-spacing child=======
-										// =========================
-										// =========================
-										// =========================
-										// =========================
 									}
 								]
-								// stalk-root child=================
-								// =================================
-								// =================================
-								// =================================
 							}
 						]
-						// stalk-root child=========================
-						// =========================================
-						// =========================================
 					},
 					{
 						text: {name: "poisonous"}
 					}
 				]
-				// bruises child====================================
-				// =================================================
 			}
 		]
-		// odor child===============================================
 	}
 };
