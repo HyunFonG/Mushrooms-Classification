@@ -1,8 +1,13 @@
-extends layout
-
-block content
-	div.container
-		div(style='width:100px; height:100px; background-color:red; padding:auto')
-			label(style={"color":"black"})
-				h2=dtModel.root.attribute
-
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='resources/Treant.css')
+		link(rel='stylesheet', href='resources/decisionTree.css')
+	body
+		block content
+			div.chart#tree-simple
+			script(src='resources/raphael.js')
+			script(src='resources/Treant.js')
+			script(src='resources/decisionTree.js')
+			script="new Treant( simple_chart_config );"
