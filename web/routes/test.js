@@ -31,6 +31,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
+
 router.get('/example', function(req, res, next) {
   // Training set
   var data = 
@@ -68,6 +69,8 @@ router.get('/example', function(req, res, next) {
     randomForestPrediction: randomForestPrediction
   });
 });
+
+
 
 module.exports = router;
 

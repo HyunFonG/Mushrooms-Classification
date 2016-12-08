@@ -13,6 +13,10 @@ router.get('/decisionTree', function(req, res, next) {
   res.send(dtModel);
 });
 
+router.get('/tree', function(req, res, next){
+  res.render('decisionTreeGraph', { dtModel: dtModel });
+});
+
 module.exports = router;
 
 var dt = (function () {
