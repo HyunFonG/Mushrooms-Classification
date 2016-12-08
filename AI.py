@@ -8,19 +8,24 @@ from sklearn import tree
 from sklearn import preprocessing
 from sklearn.model_selection import cross_val_score
 
-# filename = input('Please enter your knowledge base file')
+# Import Data
 filename = 'mushrooms.csv'
 data = read_csv(filename)
 new_data = data.copy()
+
+category_mapper = {}
 
 for i in range(0, len(data.columns)):
     le = preprocessing.LabelEncoder()
     le.fit(data.ix[:, i])
     new_data.ix[:, i] = le.transform(data.ix[:, i])
-
+    category_mapper[data.columns[i]] = {}
+    for j in range(0, len(le.classes_)):
+        category_mapper[data.columns[i]][le.classes_[j]] = j
 
 # print (data.drop('class', 1))
 
+# create input and output data
 data_target = new_data['class']
 data_feature = new_data.drop('class', 1)
 data_feature = data_feature.drop('bruises',1)
@@ -28,14 +33,14 @@ data_feature = data_feature.drop('spore-print-color',1)
 data_feature = data_feature.drop('odor',1)
 data_feature = data_feature.drop('stalk-root',1)
 
+# create classification model
 cfl = tree.DecisionTreeClassifier()
-
-predict = cross_val_score(cfl, data_feature, data_target, scoring='f1', cv=5)
-# print(predict)
-
 cfl = cfl.fit(data_feature, data_target)
 
-print (list(np.unique(new_data['class'])))
+# predict = cross_val_score(cfl, data_feature, data_target, scoring='f1', cv=5)
+# print(predict)
+
+
 # dot_data = tree.export_graphviz(cfl, out_file=None) 
 dot_data = tree.export_graphviz(cfl, out_file=None, 
                          feature_names=list(data_feature.columns),  
