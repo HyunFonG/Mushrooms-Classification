@@ -1,5 +1,21 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  div.container
+    div.page-header
+      h1 Welcome to Mushroom Classification site.
+    if prediction
+      if prediction == 'e'
+        h1(style={'color': 'green'}) Your mushroom can eat.
+      else
+        h1(style={'color': 'red'}) Your mushroom is poisonous. 
+    h3 Please fill the information of your mushroom. This site will tell you it can eat or be poisonous.
+    div.form-group
+      form(method='post')
+        each data in dataDict
+          label= data.name
+          select.form-control(name='#{data.name}')
+            each arrtibute in data.vals
+              option(value='#{arrtibute.val}')= arrtibute.name
+        br
+        input.btn.btn-success.btn-block(type='submit')

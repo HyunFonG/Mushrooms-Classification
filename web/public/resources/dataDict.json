@@ -1,0 +1,238 @@
+[
+{
+    "name": "cap-shape",
+    "vals": [
+    {"name": "bell", "val": "b"},
+    {"name": "conical", "val":"c"},
+    {"name": "convex", "val":"x"},
+    {"name": "mflat", "val": "f"},
+    {"name": "knobbed", "val":"k"},
+    {"name": "sunken", "val": "s"}
+    ]
+},
+{
+    "name": "cap-surface",
+    "vals": [
+    {"name": "fibrous", "val":"f"},
+    {"name": "grooves", "val": "g"},
+    {"name": "scaly", "val": "y"},
+    {"name": "smooth", "val": "s"}
+    ]
+},
+{
+    "name": "cap-color",
+    "vals": [
+    {"name": "brown", "val":"n"},
+    {"name": "buff", "val":"b"},
+    {"name": "cinnamon", "val": "c"},
+    {"name": "gray", "val": "g"},
+    {"name": "green", "val": "r"},
+    {"name": "pink", "val":"p"},
+    {"name": "purple", "val": "u"},
+    {"name": "red", "val": "e"},
+    {"name": "white", "val": "w"},
+    {"name": "yellow", "val": "y"}
+    ]
+},
+{
+    "name": "bruises",
+    "vals": [
+    {"name": "bruises", "val": "t"},
+    {"name": "no", "val": "f"}
+    ]
+},
+{
+    "name": "odor",
+    "vals": [
+    {"name": "almond", "val": "a"},
+    {"name": "anise", "val": "l"},
+    {"name": "creosote", "val": "c"},
+    {"name": "fishy", "val": "y"},
+    {"name": "foul", "val": "f"},
+    {"name": "musty", "val": "m"},
+    {"name": "none", "val": "n"},
+    {"name": "pungent", "val": "p"},
+    {"name": "spicy", "val": "s"}
+    ]
+},
+{
+    "name": "gill-attachment",
+    "vals": [
+    {"name": "attached", "val": "a"},
+    {"name": "descending", "val": "d"},
+    {"name": "free", "val": "f"},
+    {"name": "notched", "val": "n"}
+    ]
+},
+{
+    "name": "gill-spacing",
+    "vals": [
+    {"name": "close", "val": "c"},
+    {"name": "crowded", "val": "w"},
+    {"name": "distant", "val": "d"}
+    ]
+},
+{
+    "name": "gill-size",
+    "vals": [
+    {"name": "broad", "val": "b"},
+    {"name": "narrow", "val": "n"}
+    ]
+},
+{
+    "name": "gill-color",
+    "vals": [
+    {"name": "black", "val": "k"},
+    {"name": "brown", "val": "n"},
+    {"name": "buff", "val": "b"},
+    {"name": "chocolate", "val": "h"},
+    {"name": "gray", "val": "g"},
+    {"name": "green", "val": "r"},
+    {"name": "orange", "val": "o"},
+    {"name": "pink", "val": "p"},
+    {"name": "purple", "val": "u"},
+    {"name": "red", "val": "e"},
+    {"name": "white", "val": "w"},
+    {"name": "yellow", "val": "y"}
+    ]
+},
+{
+    "name": "stalk-shape",
+    "vals": [
+    {"name": "enlarging", "val": "e"},
+    {"name": "tapering", "val": "t"}
+    ]
+},
+{
+    "name": "stalk-root",
+    "vals": [
+    {"name": "bulbous", "val": "b"},
+    {"name": "club", "val": "c"},
+    {"name": "cup", "val": "u"},
+    {"name": "equal", "val": "e"},
+    {"name": "rhizomorphs", "val":"z"},
+    {"name": "rooted", "val": "r"},
+    {"name": "missing", "val": "?"}
+    ]
+},
+{
+    "name": "stalk-surface-above-ring",
+    "vals": [
+    {"name": "fibrous", "val": "f"},
+    {"name": "scaly", "val": "y"},
+    {"name": "silky", "val": "k"},
+    {"name": "smooth", "val": "s"}
+    ]
+},
+{
+    "name": "stalk-surface-below-ring",
+    "vals": [
+    {"name": "fibrous", "val": "f"},
+    {"name": "scaly", "val": "y"},
+    {"name": "silky", "val": "k"},
+    {"name": "smooth", "val": "s"}
+    ]
+},
+{
+    "name": "stalk-color-above-ring",
+    "vals": [
+    {"name": "brown", "val": "n"},
+    {"name": "buff", "val": "b"},
+    {"name": "cinnamon", "val": "c"},
+    {"name": "gray", "val": "g"},
+    {"name": "orange", "val": "o"},
+    {"name": "pink", "val": "p"},
+    {"name": "red", "val": "e"},
+    {"name": "white", "val": "w"},
+    {"name": "yellow", "val": "y"}
+    ]
+},
+{
+    "name": "stalk-color-below-ring",
+    "vals": [
+    {"name": "brown", "val": "n"},
+    {"name": "buff", "val": "b"},
+    {"name": "cinnamon", "val": "c"},
+    {"name": "gray", "val": "g"},
+    {"name": "orange", "val": "o"},
+    {"name": "pink", "val": "p"},
+    {"name": "red", "val": "e"},
+    {"name": "white", "val": "w"},
+    {"name": "yellow", "val": "y"}
+    ]
+},
+{
+    "name": "veil-type",
+    "vals": [
+    {"name": "partial", "val": "p"},
+    {"name": "universal", "val": "u"}
+    ]
+},
+{
+    "name": "veil-color",
+    "vals": [
+    {"name": "brown", "val": "n"},
+    {"name": "orange", "val": "o"},
+    {"name": "white", "val": "w"},
+    {"name": "yellow", "val": "y"}
+    ]
+},
+{
+    "name": "ring-number",
+    "vals": [
+    {"name": "none", "val": "n"},
+    {"name": "one", "val": "o"},
+    {"name": "two", "val": "t"}
+    ]
+},
+{
+    "name": "ring-type",
+    "vals": [
+    {"name": "cobwebby", "val": "c"},
+    {"name": "evanescent", "val": "e"},
+    {"name": "flaring", "val": "f"},
+    {"name": "large", "val": "l"},
+    {"name": "none", "val": "n"},
+    {"name": "pendant", "val": "p"},
+    {"name": "sheathing", "val": "s"},
+    {"name": "zone", "val": "z"}
+    ]
+},
+{
+    "name": "spore-print-color",
+    "vals": [
+    {"name": "black", "val": "k"},
+    {"name": "brown", "val": "n"},
+    {"name": "buff", "val": "b"},
+    {"name": "chocolate", "val": "h"},
+    {"name": "green", "val": "r"},
+    {"name": "orange", "val": "o"},
+    {"name": "purple", "val": "u"},
+    {"name": "white", "val": "w"},
+    {"name": "yellow", "val": "y"}
+    ]
+},
+{
+    "name": "population",
+    "vals": [
+    {"name": "abundant", "val": "a"},
+    {"name": "clustered", "val": "c"},
+    {"name": "numerous", "val": "n"},
+    {"name": "scattered", "val": "s"},
+    {"name": "several", "val": "v"},
+    {"name": "solitary", "val": "y"}
+    ]
+},
+{
+    "name": "habitat",
+    "vals": [
+    {"name": "grasses", "val": "g"},
+    {"name": "leaves", "val": "l"},
+    {"name": "meadows", "val": "m"},
+    {"name": "paths", "val": "p"},
+    {"name": "urban", "val": "u"},
+    {"name": "waste", "val": "w"},
+    {"name": "woods", "val": "d"}
+    ]
+}
+]

@@ -2,41 +2,15 @@ var express = require('express');
 var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // res.render('index', { title: 'Express' });
-  var testData = {
-    "cap-shape": "x",
-    "cap-surface": "s",
-    "cap-color": "n",
-    "gill-attachment": "f",
-    "gill-spacing": "c",
-    "gill-size": "n",
-    "gill-color": "k",
-    "stalk-shape": "e",
-    "stalk-surface-above-ring": "s",
-    "stalk-surface-below-ring": "s",
-    "stalk-color-above-ring": "w",
-    "stalk-color-below-ring": "w",
-    "veil-type": "p",
-    "veil-color": "w",
-    "ring-number": "o",
-    "ring-type": "p",
-    "population": "s",
-    "habitat": "u"
-  };
-  res.send({
-    testData: testData,
-    prediction: dtModel.predict(testData)
-  });
+  res.render('index', { dataDict: dataDict });
+});
+
+router.post('/', function(req, res, next) {
+  res.render('index', { dataDict: dataDict, prediction: dtModel.predict(req.body) });
 });
 
 router.get('/decisionTree', function(req, res, next) {
   res.send(dtModel);
-});
-
-router.post('/', function(req, res, next) {
-  res.send({
-    prediction: dtModel.predict(req.data)
-  });
 });
 
 module.exports = router;
@@ -436,7 +410,8 @@ var dt = (function () {
     return exports;
 })();
 
-var mushroomData = require('./../public/resources/mushrooms_crop.json');
+var dataDict = require('./../public/resources/dataDict.json');
+var mushroomData = require('./../public/resources/mushrooms.json');
 
 // Configuration
 var config = {
