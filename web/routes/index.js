@@ -24,10 +24,13 @@ router.get('/', function(req, res, next) {
     "habitat": "u"
   };
   res.send({
-    decisionTree: dtModel,
     testData: testData,
     prediction: dtModel.predict(testData)
   });
+});
+
+router.get('/decisionTree', function(req, res, next) {
+  res.send(dtModel);
 });
 
 router.post('/', function(req, res, next) {
