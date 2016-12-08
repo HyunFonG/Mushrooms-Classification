@@ -4,28 +4,28 @@ var simple_chart_config = {
 	},
 	
 	nodeStructure: {
-		text: { name: "odor" },
+		text: { name: "odor == n" },
 		pivot: {name: "n"},
 		// odor child======================================
 		children: [
 			{
-				text: { name: "spore-print-color"},
+				text: { name: "spore-print-color == r"},
 				pivot: {name: "r"},
 				// ========================================
 				// spore-print-color=======================
 				children:[
 					{
-						text: {name: "p"}
+						text: {name: "poisonous"}
 					},
 					{
-						text: {name: "stalk-surface-below-ring"},
+						text: {name: "stalk-surface-below-ring == y"},
 						pivot: {name: "y"},
 						// ================================
 						// ================================
 						// stalk-surface-below-ring========
 						children:[
 							{
-								text: {name: "gill-size"},
+								text: {name: "gill-size == n"},
 								pivot: {name: "n"},
 								// ========================
 								// ========================
@@ -33,7 +33,7 @@ var simple_chart_config = {
 								// gill-size child=========
 								children:[
 									{
-										text: {name: "p"},
+										text: {name: "poisonous"},
 									},
 									{
 										text: {name: "e"},
@@ -45,7 +45,7 @@ var simple_chart_config = {
 								// =========================
 							},
 							{
-								text: {name: "cap-surface"},
+								text: {name: "cap-surface == g"},
 								pivot: {name: "g"},
 								// =========================
 								// =========================
@@ -53,7 +53,7 @@ var simple_chart_config = {
 								// cap-surface==============
 								children:[
 									{
-										text: {name: "p"},
+										text: {name: "poisonous"},
 									},
 									{
 										text: {name: "e"},
@@ -74,13 +74,13 @@ var simple_chart_config = {
 				// ==========================================
 			},
 			{
-				text: { name: "bruises"},
+				text: { name: "bruises == t"},
 				pivot: {name: "t"},
 				// ================================================
 				// bruises child===================================
 				children:[
 					{
-						text: {name: "stalk-root"},
+						text: {name: "stalk-root == c"},
 						pivot: {name: "c"},
 						// ========================================
 						// ========================================
@@ -90,7 +90,7 @@ var simple_chart_config = {
 								text: {name: "e"}
 							},
 							{
-								text: {name: "stalk-root"},
+								text: {name: "stalk-root == r"},
 								pivot: {name: "r"},
 								// =================================
 								// =================================
@@ -101,7 +101,7 @@ var simple_chart_config = {
 										text: {name: "e"}
 									},
 									{
-										text: {name: "gill-spacing"},
+										text: {name: "gill-spacing == c"},
 										pivot: {name: "c"},
 										// =========================
 										// =========================
@@ -110,7 +110,7 @@ var simple_chart_config = {
 										// gill-spacing child=======
 										children:[
 											{
-												text: {name: "p"}
+												text: {name: "poisonous"}
 											},
 											{
 												text: {name: "e"}
@@ -134,7 +134,7 @@ var simple_chart_config = {
 						// =========================================
 					},
 					{
-						text: {name: "p"}
+						text: {name: "poisonous"}
 					}
 				]
 				// bruises child====================================
